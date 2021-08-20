@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 62.5%;
+}
+
+// Background styles
+body {
+    height: 100vh;
+    background-color: #1D3557;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+// Todo box
+.todo-input, .add-button, .clear-list {
+    border: none;
+    outline: none;
+}
+.todo-input {
+    padding: 2rem 5rem;
+    margin: 3rem;
+
+    background-color: lightslategray;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.todo-box {
+    display: flex;
+    justify-content: space-between;
+}
+.add-button, .clear-list {
+    cursor: pointer;
+    padding: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.6rem;
+
+    background-color: #55555555;
+    &:hover {
+        transition: ease-in-out, 1s;
+        background-color: white;
+    }
+}
+
+.add-button {
+    margin-right: 0.5rem;
+}
+.clear-list {
+    margin-left: 0.5rem;
+}
+
+//List of toDos
+
+.todos-container {
+    margin: 3rem;
+}
+//.todos-list {}
+
+.todos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+        margin: 1rem;
+    }
+}
+
+// Styles being used from JS
+
+.todoDiv {
+    width: 50rem;
+    height: 5rem;
+    background-color: lightslategray;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.deleteButton {
+    cursor: pointer;
+    padding: 1rem;
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    font-family: 'Roboto Mono', monospace;
+
+    &:hover {
+        transition: ease-in-out, 1s;
+        background-color: white;
+    }
+}
